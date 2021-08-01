@@ -294,10 +294,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 
-.navbar-nav li a:hover, .navbar .navbar-collapse .navbar-nav .active>a, .navbar-nav li:hover>a {
+.navbar-nav li a:hover, .navbar-nav li:hover>a {
   color: #d9ba85 !important;
 }
-
+.navbar .navbar-collapse .navbar-nav .active>a
+{
+  color: #cda45e !important;
+}
 .navbar .navbar-collapse .navbar-nav .book-a-table a {
   border: 2px solid #cda45e;
   border-radius: 50px;
