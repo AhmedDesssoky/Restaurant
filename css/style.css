@@ -1025,6 +1025,7 @@ form button:hover {
 }
 
 #lightBoxContainer {
+  width: 100%;
   position: fixed;
   top: 70px;
   right: 0;
@@ -1036,7 +1037,7 @@ form button:hover {
 
 #lightBoxItem {
   height: 100%;
-  width: 65%;
+  width: 100%;
   background-image: url(../img/gallery/gallery-1.jpg);
   background-size: cover;
   background-position: center center;
@@ -1046,6 +1047,12 @@ form button:hover {
   position: absolute;
   top: 20px;
   right: 20px;
+  cursor: pointer;
+}
+#next {
+  position: absolute;
+  top: 45%;
+  right: 0px;
   cursor: pointer;
 }
 

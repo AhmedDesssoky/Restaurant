@@ -10,10 +10,8 @@ $(document).ready(function () {
     let navLink = navActive.getElementsByClassName("nav-link");
 
     let currentIndex = 0;
-    for (let i = 0; i < navLink.length; i++)
-
-    {
-        navLink[i].addEventListener("click", function() {
+    for (let i = 0; i < navLink.length; i++) {
+        navLink[i].addEventListener("click", function () {
             let current = document.getElementsByClassName("active");
             current[0].className = current[0].className.replace(" active", "");
             this.className += " active";
@@ -25,14 +23,15 @@ $(document).ready(function () {
     for (let i = 0; i < imgs.length; i++) {
 
         imgs[i].addEventListener("click", function (eventInfo) {
-    
+
             currentIndex = imgs.indexOf(eventInfo.target);
-        
+
             let imgSrc = eventInfo.target.getAttribute("src");
             lightBoxItem.style.backgroundImage = "url(" + imgSrc + ")";
-    
-            lightBoxContainer.style.display="flex";
-    
+
+            lightBoxContainer.style.display = "flex";
+            $(".back-to-top").fadeOut(500)
+
         })
     }
     function nextSlide() {
@@ -42,51 +41,51 @@ $(document).ready(function () {
         }
         var imgSrc = imgs[currentIndex].getAttribute("src");
         lightBoxItem.style.backgroundImage = "url(" + imgSrc + ")";
-    
+
     }
-    
-    
-    
-    function prevSlide(){
-    
+
+
+
+    function prevSlide() {
+
         currentIndex--;
-        if(currentIndex <0)
-        {
-            currentIndex = imgs.length -1;
-    
+        if (currentIndex < 0) {
+            currentIndex = imgs.length - 1;
+
         }
         var imgSrc = imgs[currentIndex].getAttribute("src");
         lightBoxItem.style.backgroundImage = "url(" + imgSrc + ")";
     }
-    function closeSlide(){
-        lightBoxContainer.style.display="none";
-    
-    }
-    closeBtn.addEventListener("click" , closeSlide)
-    nextBtn.addEventListener("click" ,nextSlide )
-    prevBtn.addEventListener("click" , prevSlide)
-    document.addEventListener("keydown" , function(eventInfo){
+    function closeSlide() {
+        lightBoxContainer.style.display = "none";
+        $(".back-to-top").fadeIn(500)
 
-        if(eventInfo.code=="ArrowRight")
-        {
+
+    }
+    closeBtn.addEventListener("click", closeSlide)
+    nextBtn.addEventListener("click", nextSlide)
+    prevBtn.addEventListener("click", prevSlide)
+    document.addEventListener("keydown", function (eventInfo) {
+
+        if (eventInfo.code == "ArrowRight") {
             nextSlide();
         }
-        else if(eventInfo.code=="ArrowLeft"){
+        else if (eventInfo.code == "ArrowLeft") {
             prevSlide();
         }
-        else if(eventInfo.code=="Escape"){
+        else if (eventInfo.code == "Escape") {
             closeSlide();
         }
-        
-        
-        })
-        
-        lightBoxContainer.addEventListener("click" , function(evenInfo){
-        
-            if(evenInfo.target==lightBoxContainer){
-                lightBoxContainer.style.display="none";
-            }
-        })
+
+
+    })
+
+    lightBoxContainer.addEventListener("click", function (evenInfo) {
+
+        if (evenInfo.target == lightBoxContainer) {
+            lightBoxContainer.style.display = "none";
+        }
+    })
 
     new WOW().init();
 
