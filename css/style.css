@@ -1013,6 +1013,7 @@ form button:hover {
   overflow: hidden;
   border-right: 3px solid #454035;
   border-bottom: 3px solid #454035;
+  cursor: pointer;
 }
 
 .gallary .gallary-item img {
