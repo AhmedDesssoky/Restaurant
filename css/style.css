@@ -937,6 +937,7 @@ form button:hover {
 
 .testimonials .testimonials-item {
   box-sizing: content-box;
+  cursor: pointer;
 }
 
 .testimonials .testimonials-item .test-img {
