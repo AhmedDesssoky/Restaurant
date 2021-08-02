@@ -50,7 +50,7 @@
 
 
             <div class="container">
-                <h1 class="logo "><a href="index.html">Restaurantly</a></h1>
+                <h1 class="logo"><a href="index.html">Restaurantly</a></h1>
                 <button class="navbar-toggler bg-light " type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -58,24 +58,28 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#hero">Home <span class="sr-only">(current)</span></a>
+
+
+
+
+                    <ul class="navbar-nav ml-auto " id="navActive">
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="#hero">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#about">About </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#menu">Menu <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#menu">Menu </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#Specials">Specials <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#Specials">Specials </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#events">Events <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#events">Events </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#gallary">Gallery <span class="sr-only">(current)</span> </a>
+                            <a class="nav-link" href="#gallary">Gallery </a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="#chefs">Chefs </a>
@@ -92,6 +96,11 @@
 
 
                 </div>
+
+
+
+
+
             </div>
 
         </nav>
@@ -100,11 +109,11 @@
     <!-- End navbar -->
 
 
-    <!-- data-wow-duration="3s" data-wow-delay=".5s " -->
+
 
     <!-- start hero -->
 
-    <section id="hero" class="d-flex align-items-center" >
+    <section id="hero" class="d-flex align-items-center">
         <div class="container position-relative text-lg-left text-center ">
             <div class="row d-flex  align-items-center ">
                 <div class="col-lg-8">
@@ -122,7 +131,8 @@
                 </div>
 
 
-                <div class="col-lg-4  d-flex justify-content-center align-items-center wow fadeInUp" data-wow-duration="1s">
+                <div class="col-lg-4  d-flex justify-content-center align-items-center wow fadeInUp"
+                    data-wow-duration="1s">
                     <a href="https://www.youtube.com/watch?v=GlrxcuEDyF8" class="venobox play-btn" data-vbtype="video"
                         data-autoplay="true"></a>
                 </div>
@@ -235,7 +245,8 @@
                 <p>Check Our Tasty Menu</p>
             </div>
         </div>
-        <ul class="nav nav-pills mb-3 d-flex justify-content-center align-items-center  wow fadeInUpBig" data-wow-duration="2s" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills mb-3 d-flex justify-content-center align-items-center  wow fadeInUpBig"
+            data-wow-duration="2s" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
                     aria-controls="pills-home" aria-selected="true">All</a>
@@ -1027,6 +1038,15 @@
             </div>
         </div>
 
+        <div id="lightBoxContainer" class=" justify-content-center align-items-center">
+
+            <div id="lightBoxItem" class=" position-relative d-flex  align-items-center justify-content-lg-between">
+                <i id="prev" class="fas fa-arrow-alt-circle-left fa-2x cursor"></i>
+                <i id="close" class="fas fa-window-close  fa-1x cursor"></i>
+                <i id="next" class="fas fa-arrow-alt-circle-right fa-2x cursor"></i>
+            </div>
+        </div>
+
     </section>
 
     <!-- End gallary -->
@@ -1107,7 +1127,7 @@
 
     <section id="contact" class="contact">
 
-        <div class="container  wow fadeInUp" >
+        <div class="container  wow fadeInUp">
             <div class="section-title">
                 <h2>CONTACT</h2>
                 <p>Contact Us </p>
@@ -1157,31 +1177,31 @@
 
                     <form action="" >
 
-                        <div class="row">
-                            <div class=" col-md-6  form-group">
-                                <input type="text" class="form-control" placeholder="Your Name">
-                            </div>
-                            <div class=" col-md-6  form-group">
-                                <input type="text" class="form-control" placeholder="Your Email">
-                            </div>
-                            <div class=" col-md-12 form-group">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control w-100 text " rows="8" placeholder="message"></textarea>
-                        </div>
-
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-
-                    </form>
-
-
-
-
-
+                        <div class=" row">
+                    <div class=" col-md-6  form-group">
+                        <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <div class=" col-md-6  form-group">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                    </div>
+                    <div class=" col-md-12 form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
                 </div>
+                <div class="form-group">
+                    <textarea class="form-control w-100 text " rows="8" placeholder="message"></textarea>
+                </div>
+
+                <div class="text-center"><button type="submit">Send Message</button></div>
+
+                </form>
+
+
+
+
+
             </div>
+        </div>
 
         </div>
         </div>

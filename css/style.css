@@ -43,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #cda45e;
   color: #1a1814;
 }
+
 #loding {
   position: fixed;
   top: 0;
@@ -52,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #000;
   z-index: 99999999999999;
 }
+
 .sk-circle {
   margin: 250px auto;
   width: 75px;
@@ -222,7 +224,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
 #topbar {
   height: 40px;
   font-size: 14px;
@@ -297,10 +298,10 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-nav li a:hover, .navbar-nav li:hover>a {
   color: #d9ba85 !important;
 }
-.navbar .navbar-collapse .navbar-nav .active>a
-{
-  color: #cda45e !important;
+ .navbar-nav .nav-item a.active {
+  color: #d9ba85 !important;
 }
+
 .navbar .navbar-collapse .navbar-nav .book-a-table a {
   border: 2px solid #cda45e;
   border-radius: 50px;
@@ -774,7 +775,7 @@ section {
   color: #cda45e;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+#menu .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
   background-color: transparent;
 }
 
@@ -1019,6 +1020,37 @@ form button:hover {
 
 .gallary .gallary-item:hover img {
   transform: scale(1.1);
+}
+
+#lightBoxContainer {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.54);
+  display: none;
+}
+
+#lightBoxItem {
+  height: 100%;
+  width: 65%;
+  background-image: url(../img/gallery/gallery-1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+  background-color: transparent;
+  color: rgb(182, 182, 182);
 }
 
 .chefs .member {
